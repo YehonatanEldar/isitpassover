@@ -70,3 +70,23 @@ p#result {
         opacity: 0.5;
     }
 }
+
+/* Style for the small corner image */
+.corner-image {
+    position: fixed; /* Sticks to the corner */
+    top: 10px; /* Adjust distance from the top */
+    right: 10px; /* Adjust distance from the right */
+    width: 40px; /* Image size */
+    height: 40px; /* Image size */
+    z-index: 1000; /* Ensure it stays on top */
+    cursor: pointer; /* Show pointer when hovering */
+
+    filter: invert(18%) sepia(87%) saturate(1048%) hue-rotate(202deg) brightness(50%) contrast(85%);
+}
+
+/* Optional hover effect */
+.corner-image:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    transition: transform 0.2s ease-in-out;
+}
+
