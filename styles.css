@@ -38,7 +38,7 @@ button {
     background: #3498db;
     color: #fff;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -71,22 +71,41 @@ p#result {
     }
 }
 
-/* Style for the small corner image */
-.corner-image {
-    position: fixed; /* Sticks to the corner */
+/* Style for the container holding the corner elements */
+.corner-container {
+    position: fixed; /* Stick to the corner */
     top: 10px; /* Adjust distance from the top */
     right: 10px; /* Adjust distance from the right */
-    width: 40px; /* Image size */
-    height: 40px; /* Image size */
-    z-index: 1000; /* Ensure it stays on top */
-    cursor: pointer; /* Show pointer when hovering */
-
-    filter: invert(18%) sepia(87%) saturate(1048%) hue-rotate(202deg) brightness(50%) contrast(85%);
+    display: flex; /* Align elements horizontally */
+    align-items: center; /* Vertically align items */
+    z-index: 1000; /* Keep on top of other elements */
 }
 
-/* Optional hover effect */
+/* Style for the GitHub logo */
+.corner-image {
+    width: 40px; /* Logo size */
+    height: 40px; /* Logo size */
+    cursor: pointer; /* Pointer cursor for clickable items */
+    filter: invert(18%) sepia(87%) saturate(1048%) hue-rotate(202deg) brightness(50%) contrast(85%);
+    margin-right: 2px; /* Space between logo and link */
+}
+
+/* Optional hover effect for logo */
 .corner-image:hover {
     transform: scale(1.05); /* Slightly enlarge on hover */
     transition: transform 0.2s ease-in-out;
 }
 
+/* API Link Style */
+.api-link {
+    font-size: 1.2rem; /* Text size */
+    color: #0066cc; /* Link color */
+    text-decoration: underline; /* Underlined text */
+    transition: color 0.3s; /* Smooth color change on hover */
+    margin-right: 12px; /* Space between logo and link */
+}
+
+/* Hover effect for the API link */
+.api-link:hover {
+    color: #131212; /* Darker color on hover */
+} 
