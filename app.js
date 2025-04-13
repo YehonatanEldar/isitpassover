@@ -14,12 +14,14 @@ function checkPassover() {
 document.addEventListener("DOMContentLoaded", function () {
     switch (currentPath) {
         case "/": {
+            console.log("Home page loaded.");
             const button = document.getElementById("checkPassover");
             const result = document.getElementById("result");
             const loadingTime = 5;
 
             if (button && result) {
                 button.addEventListener("click", function () {
+                    console.log("Button clicked!");
                     // Show a loading message
                     result.classList.add("loading");
                     result.textContent = "Checking...";
