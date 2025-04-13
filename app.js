@@ -35,8 +35,14 @@ document.addEventListener("DOMContentLoaded", function () {
             break;
         }
 
-        case "/api.html": {
+        case "/api/": {
             document.body.textContent = JSON.stringify({ isPassover: checkPassover() });
+            break;
+        }
+
+        case "/index.html"  : {
+            // redirect to '/'
+            window.location.href = '/';
             break;
         }
 
