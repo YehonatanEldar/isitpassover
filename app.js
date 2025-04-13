@@ -49,8 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         default: {
-            console.warn("No logic implemented for this path.");
-            console.log("Path:", currentPath);
+            console.warn("No logic implemented for this path. ", currentPath);
             break;
         }
     }
