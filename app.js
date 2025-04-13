@@ -13,7 +13,7 @@ function checkPassover() {
 
 document.addEventListener("DOMContentLoaded", function () {
     switch (currentPath) {
-        case "/": {
+        case "/isitpassover": {
             console.log("Home page loaded.");
             const button = document.getElementById("checkPassover");
             const result = document.getElementById("result");
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         default: {
-            console.warn("No logic implemented for this path. ", currentPath);
+            console.log("No logic implemented for this path. ", currentPath);
             break;
         }
     }
