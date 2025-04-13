@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
             break;
         }
 
-        case "/api/": {
+        case "/isitpassover/api/": {
             document.body.textContent = JSON.stringify({ isPassover: checkPassover() });
             break;
         }
