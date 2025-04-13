@@ -13,7 +13,7 @@ function checkPassover() {
 
 document.addEventListener("DOMContentLoaded", function () {
     switch (currentPath) {
-        case "/isitpassover": {
+        case "/isitpassover/": {
             console.log("Home page loaded.");
             const button = document.getElementById("checkPassover");
             const result = document.getElementById("result");
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
             break;
         }
 
-        case "/isitpassover/api/": {
+        case "/api/:1": {
             document.body.textContent = JSON.stringify({ isPassover: checkPassover() });
             break;
         }
